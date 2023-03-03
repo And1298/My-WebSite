@@ -13,7 +13,13 @@
         width: 260px;
     }
 }
+@media only screen and (max-width: 767px) {
+    .my-list-class{
+        display: none;
+    }
+}
 /* ff */
+
 .text, .text:focus{
     color: white;
 }
