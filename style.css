@@ -1,0 +1,28 @@
+/* CSS NAVBAR */
+.my-bg-navbar{
+    background-color: rgba(10, 10, 10, 0.8);
+    color: white !important;
+}
+/* LOGO e MEDIAQUERY */
+.logo{
+    width: 330px;
+    padding: 22px 0;
+}
+@media screen and (max-width: 480px) {
+    .logo{
+        width: 260px;
+    }
+}
+/* ff */
+.text, .text:focus{
+    color: white;
+}
+/* btn inside the nav */
+.my-btn-shop, .my-btn-shop:focus{
+    color: white;
+    border: solid 1px white;
+}
+.my-btn-shop:hover{
+    background-color: white;
+    color: black;
+}
