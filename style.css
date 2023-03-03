@@ -1,27 +1,7 @@
 /* CSS NAVBAR */
 .my-bg-navbar{
-    background-color: rgba(10, 10, 10, 0.8);
+    background: linear-gradient(90deg, rgba(23,23,23,1) 0%, rgba(23,23,23,1) 34%, rgba(23,23,23,0.3) 100%);
     color: white !important;
-}
-/* LOGO e MEDIAQUERY */
-.logo{
-    width: 330px;
-    padding: 22px 0;
-}
-@media screen and (max-width: 480px) {
-    .logo{
-        width: 260px;
-    }
-}
-@media only screen and (max-width: 767px) {
-    .my-list-class{
-        display: none;
-    }
-}
-/* ff */
-
-.text, .text:focus{
-    color: white;
 }
 /* btn inside the nav */
 .my-btn-shop, .my-btn-shop:focus{
@@ -31,4 +11,76 @@
 .my-btn-shop:hover{
     background-color: white;
     color: black;
+}
+/* LOGO e MEDIAQUERY */
+.logo{
+    width: 330px;
+    padding: 22px 0;
+}
+@media screen and (min-width: 767px) and (max-width: 1100px) {
+    .logo{
+        width: 250px;
+    }
+    .container{
+        justify-content: center !important;
+    }
+}
+@media screen and (max-width: 480px) {
+    .logo{
+        width: 260px;
+    }
+    .container{
+        justify-content: center !important;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .my-list-class{
+        display: none;
+    }
+}
+.my-btn, .my-btn:hover{
+    color: white;
+    border: 1px solid white;
+}
+/* ff */
+
+
+/* Qui comincio l'HEADER */
+.container-mio{
+    background-image: linear-gradient(90deg, rgba(23,23,23,1) 0%, rgba(23,23,23,1) 40%, rgba(23,23,23,0)) ,url(img/gallery_03@2x.png);
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* SCHERMI DA 1100 PX IN SU */
+@media screen and (min-width: 1100px) {
+    .container-mio{
+        background-image: linear-gradient(90deg, rgba(23,23,23,1) 0%, rgba(23,23,23,1) 53%, rgba(23,23,23,0)) ,url(img/gallery_03@2x.png);
+        background-position: right;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .header-title{
+        font-size: 2rem !important;
+    }
+}
+/* SCHERMI DA 1500PX IN SU (30 POLLICI) */
+@media screen and (min-width: 1500px) {
+    .container-mio{
+        background-image: linear-gradient(90deg, rgba(23,23,23,1) 0%, rgba(23,23,23,1) 55%, rgba(23,23,23,0)) ,url(img/gallery_03@2x.png);
+        background-position: right;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .header-title{
+        font-size: 3rem !important;
+    }
+}
+.presentation{
+    color: white;
+    margin-left: 10%;
+    width: 70%;
+}
+.header-title{
+    font-size: 2rem;
 }
