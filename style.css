@@ -1,16 +1,32 @@
+/* Aggiungiamo variabili come colori */
+:root{
+    --bianco: white;
+    --nero : black;
+    --prim : rgba(23,23,23,1);
+    --sec : #2f2f2f;
+    --crim : crimson;
+}
+body{
+    background-color: var(--sec);
+}
+.white-bg{
+    background-color: var(--bianco);
+}
+
+
 /* CSS NAVBAR */
 .my-bg-navbar{
     background: linear-gradient(90deg, rgba(23,23,23,1) 0%, rgba(23,23,23,1) 34%, rgba(23,23,23,0.3) 100%);
-    color: white !important;
+    color: var(--bianco) !important;
 }
 /* btn inside the nav */
 .my-btn-shop, .my-btn-shop:focus{
-    color: white;
-    border: solid 1px white;
+    color: var(--bianco);
+    border: solid 1px var(--bianco);
 }
 .my-btn-shop:hover{
-    background-color: white;
-    color: black;
+    background-color: var(--bianco);
+    color: var(--nero);
 }
 /* LOGO e MEDIAQUERY */
 .logo{
@@ -39,8 +55,8 @@
     }
 }
 .my-btn, .my-btn:hover{
-    color: white;
-    border: 1px solid white;
+    color: var(--bianco);
+    border: 1px solid var(--bianco);
 }
 /* ff */
 
@@ -51,18 +67,6 @@
     background-position: right;
     background-size: cover;
     background-repeat: no-repeat;
-}
-/* SCHERMI DA 1100 PX IN SU */
-@media screen and (min-width: 1100px) {
-    .container-mio{
-        background-image: linear-gradient(90deg, rgba(23,23,23,1) 0%, rgba(23,23,23,1) 53%, rgba(23,23,23,0)) ,url(img/gallery_03@2x.png);
-        background-position: right;
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
-    .header-title{
-        font-size: 2rem !important;
-    }
 }
 /* SCHERMI DA 1500PX IN SU (30 POLLICI) */
 @media screen and (min-width: 1500px) {
@@ -77,10 +81,47 @@
     }
 }
 .presentation{
-    color: white;
+    color: var(--bianco);
     margin-left: 10%;
     width: 70%;
 }
 .header-title{
     font-size: 2rem;
+}
+
+
+
+/* title our motorcycles */
+.my-h2{
+    color: var(--bianco);
+    text-align: center;
+}
+/* Carousel */
+.my-img{
+    width: 100%;
+    object-fit: cover;
+}
+.my-modify{
+    border-radius: 25px;
+    transition: 0.5s;
+}
+.my-modify:hover{
+    box-shadow: rgba(250, 250, 250, 0.6) 0px 7px 29px 0px;
+}
+.btn-my-color{
+    border: 3px solid var(--nero);
+}
+.btn-my-color:hover{
+    border: 3px solid var(--crim);
+    color: var(--crim);
+}
+.my-btn-big{
+    color: var(--bianco);
+    border: solid 2px var(--bianco);
+    margin-top: 50px;
+    padding: 16px 150px;
+}
+.my-btn-big:hover{
+    border: 2px solid var(--crim);
+    color: var(--crim);
 }
