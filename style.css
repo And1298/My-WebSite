@@ -43,7 +43,7 @@ body{
 }
 @media screen and (max-width: 480px) {
     .logo{
-        width: 260px;
+        width: 180px;
     }
     .container{
         justify-content: center !important;
@@ -54,9 +54,13 @@ body{
         display: none;
     }
 }
-.my-btn, .my-btn:hover{
+.my-btn{
     color: var(--bianco);
-    border: 1px solid var(--bianco);
+    border: 2px solid var(--bianco);
+}
+.my-btn:hover{
+    color: var(--crim);
+    border: 2px solid var(--crim);
 }
 /* ff */
 
@@ -124,4 +128,69 @@ body{
 .my-btn-big:hover{
     border: 2px solid var(--crim);
     color: var(--crim);
+}
+@media screen and (max-width: 600px) {
+    .my-btn-big{
+        color: var(--bianco);
+        border: solid 2px var(--bianco);
+        margin-top: 50px;
+        padding: 16px 60px;
+    }
+}
+
+
+
+/* SECTION ABOUT US */
+.section-img{
+    width: 100%;
+    object-fit: cover;
+    /* object-position: right; */
+}
+.mia-classe-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 4.5rem;
+}
+.paragrafo-aboutUS{
+    padding-top: 1.5rem;
+    font-size: 14px;
+    line-height: 1.5rem;
+}
+.title-aboutUS{
+    font-size: 36px;
+}
+.my-row{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+@media screen and (max-width: 600px) {
+    .mia-classe-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 2rem;
+        padding-bottom: 3rem;
+    }
+    .paragrafo-aboutUS{
+        padding-top: 1.5rem;
+        font-size: 16px;
+        line-height: 2rem;
+    }
+    .title-aboutUS{
+        font-size: 46px;
+    }
+}
+@media screen and (min-width: 1300px) {
+    .mia-classe-text{
+        padding: 0 6rem;
+    }
+    .paragrafo-aboutUS{
+        font-size: 20px;
+    }
+    .title-aboutUS{
+        font-size: 46px;
+    }
 }
