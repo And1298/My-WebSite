@@ -91,12 +91,68 @@
     
     <h2 class="my-h2 py-5">Our motorcycles</h2>
     
-    <!-- Carosello -->
-    <div id="carouselExample" class="carousel slide">
+    <!-- Carosello per mobile -->
+    <div id="carouselExample" class="carousel slide d-block d-md-none">
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <!-- Card per carosello  -->
                 <div class="container">
+                    <div class="row justify-content-center">
+                        <!-- PRIMA CARD -->
+                        <div class="col-10 my-2 d-flex flex-column white-bg px-4 py-4 mx-3 my-modify">
+                            <img src="./img/BMW.png" class="my-img" alt="">
+                            <h4 class="card-title py-4">Name of your motorcycle</h4>
+                            <h5 class="pb-4">$80.900,00</h5>
+                            <button type="button" class="btn btn-lg btn-my-color py-3"><strong>Take me to the shop</strong></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item active">
+                <!-- Card per carosello  -->
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <!-- PRIMA CARD -->
+                        <div class="col-10 my-2 d-flex flex-column white-bg px-4 py-4 mx-3 my-modify">
+                            <img src="./img/BAGGER.png" class="my-img" alt="">
+                            <h4 class="card-title py-4">Name of your motorcycle</h4>
+                            <h5 class="pb-4">$80.900,00</h5>
+                            <button type="button" class="btn btn-lg btn-my-color py-3"><strong>Take me to the shop</strong></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item active">
+                <!-- Card per carosello  -->
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <!-- PRIMA CARD -->
+                        <div class="col-10 my-2 d-flex flex-column white-bg px-4 py-4 mx-3 my-modify">
+                            <img src="./img/SIDECAR.png" class="my-img" alt="">
+                            <h4 class="card-title py-4">Name of your motorcycle</h4>
+                            <h5 class="pb-4">$80.900,00</h5>
+                            <button type="button" class="btn btn-lg btn-my-color py-3"><strong>Take me to the shop</strong></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Carosello -->
+    <div id="carouselExample" class="carousel slide d-none d-md-block">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <!-- Card per carosello  -->
+                <div class="container d-none d-md-block">
                     <div class="row justify-content-center">
                         <!-- PRIMA CARD -->
                         <div class="col-3 d-flex flex-column white-bg px-4 py-4 mx-3 my-modify">
