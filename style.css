@@ -194,3 +194,27 @@ body{
         font-size: 46px;
     }
 }
+
+
+/* FORM */
+.bg-form{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: rgba(20, 20, 20, 0.4);
+    padding: 20px 40px;
+    border-radius: 10px;
+}
+.form-field:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+
+
+.container-mio2{
+    background-image: linear-gradient(90deg, rgba(23,23,23,1) 0%, rgba(23,23,23,1) 40%, rgba(23,23,23,0)) ,url(./img/sidecar_american_dreams_angelo.png);
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.customheight{
+    height: 40vh;
+}
